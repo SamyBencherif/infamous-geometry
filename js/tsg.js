@@ -39,11 +39,11 @@ exports.run = function (scene, size, quality) {
     if (size.w)
         canvas.style.width = size.w + "px";
     else
-        canvas.style.width = "100%";
+        canvas.style.width = "100vw";
     if (size.h)
         canvas.style.height = size.h + "px";
     else
-        canvas.style.height = "100%";
+        canvas.style.height = "100vh";
     document.body.appendChild(canvas);
     var overlay = document.createElement("div");
     overlay.style.width = canvas.style.width;
